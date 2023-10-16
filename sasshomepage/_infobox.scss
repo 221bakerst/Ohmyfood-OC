@@ -1,0 +1,27 @@
+.info-box{
+    height: 250px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    h1{
+        font-size: 26px;
+        padding-top: 25px;
+    }
+    h2{
+        font-size: 20px;
+        text-align: center;
+        font-weight: 25;
+        color: grey;
+        margin: 30px;
+    }
+    p{
+        color: white;
+        background-image: linear-gradient(#FF79DA,#9356DC);
+        border-radius: 15px;
+        padding: 10px;
+        box-shadow: 5px 5px 5px lightgrey;
+    }
+}

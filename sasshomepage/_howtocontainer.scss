@@ -1,0 +1,33 @@
+.how-to-container{
+    height: 300px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 40px;
+    padding: 0;
+    h3{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    li{
+        border-radius: 15px;
+        background: whitesmoke;
+        box-shadow: 5px 5px 5px lightgrey;
+        padding: 25px;
+        gap: 20px;
+        list-style: none;
+        display: flex;
+    }
+}
+
+.how-to-child i{
+    color: grey;
+}
+.how-to-child number{
+    width: 8px;
+    height: 8px;
+    border: 3px solid black;
+    border-radius: 100%;
+    padding: 3px;
+}
