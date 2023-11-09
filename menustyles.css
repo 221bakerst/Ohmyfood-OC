@@ -48,7 +48,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    animation-name: entree;
+    animation-duration: 2s;
+    /* animation-fill-mode: backwards; */
+    position: relative;
     /* border: 5px solid purple; */
+}
+@keyframes entree{
+    from{bottom: -250px;}
+    to{bottom:0;}
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 .entrees p{
     width: fit-content;
@@ -95,7 +105,6 @@
     box-shadow: 5px 5px 5px lightgrey;
 }
 .dish-description{
-    width: auto;
     display: flex;
     flex-direction: column;
     padding: 10px;
