@@ -1,0 +1,210 @@
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-v30-latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+.dish {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px lightgrey;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  overflow-x: hidden;
+}
+.dish p {
+  padding: 3px;
+}
+.dish h2 {
+  padding: 3px;
+}
+.dish:hover .name-and-description {
+  max-width: calc(100% - 117px);
+}
+.dish:hover .price-and-checkmark {
+  transform: translateX(0);
+}
+.dish:hover .checkmark-box h4 {
+  transform: rotate(0);
+}
+
+.name-and-description {
+  margin: 5px;
+  max-width: calc(100% - 22px);
+  transition: max-width 1s;
+}
+.name-and-description h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.name-and-description p {
+  font-family: "Roboto";
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.price-and-checkmark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  transform: translateX(100px);
+  transition-property: transform;
+  transition-duration: 1s;
+  background-color: #99E2D0;
+}
+.price-and-checkmark p {
+  margin-right: 5px;
+  background-color: white;
+}
+.price-and-checkmark .checkmark-box {
+  width: 100px;
+}
+.price-and-checkmark h4 {
+  text-align: center;
+  transform: rotate(180deg);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #3f3f46;
+  padding: 15px;
+  color: white;
+}
+
+.footer img {
+  color: white;
+  width: 100px;
+  padding: s 20px;
+}
+
+.footer ul {
+  color: white;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer ul li {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  gap: 5px;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/shrikhand-v15-latin-regular.woff2") format("woff2");
+}
+.rest-image img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 550px;
+}
+
+.menu-items {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: whitesmoke;
+  /* border: 8px solid red; */
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  margin-top: -100px;
+  position: relative;
+  z-index: 2;
+}
+
+.rest-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-family: "Shrikhand";
+  font-size: 27px;
+}
+
+.rest-name i {
+  font-size: 30px;
+  padding: 8px;
+}
+
+.entrees {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation-name: entree;
+  animation-duration: 2s;
+  /* animation-fill-mode: backwards; */
+  position: relative;
+  /* border: 5px solid purple; */
+}
+
+@keyframes entree {
+  from {
+    bottom: -250px;
+  }
+  to {
+    bottom: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.entrees h3 {
+  width: fit-content;
+  padding: 5px;
+  color: gray;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-bottom: 4px solid #99E2D0;
+  /* font-family: 'Roboto 300'; */
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header .header img {
+  width: 200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=indexmenu.css.map */

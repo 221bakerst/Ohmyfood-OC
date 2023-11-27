@@ -1,0 +1,76 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Shrikhand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/shrikhand-v15-latin-regular.woff2') format('woff2');
+   }
+.rest-image img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 550px;
+}
+.menu-items{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: whitesmoke;
+    /* border: 8px solid red; */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+    
+
+}
+        
+.rest-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Shrikhand';
+    font-size: 27px;
+}
+.rest-name i{
+    font-size: 30px;
+    padding: 8px;
+}
+.entrees{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation-name: entree;
+    animation-duration: 2s;
+    /* animation-fill-mode: backwards; */
+    position: relative;
+    /* border: 5px solid purple; */
+}
+@keyframes entree{
+    from{bottom: -250px;}
+    to{bottom:0;}
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.entrees h3{
+    width: fit-content;
+    padding: 5px;
+    color: gray;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: 4px solid #99E2D0;
+    /* font-family: 'Roboto 300'; */
+}
+
+
+
+
+
+

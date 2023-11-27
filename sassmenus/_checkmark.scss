@@ -1,0 +1,97 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v30-latin-300.woff2') format('woff2');
+   }
+  @font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+   }
+
+.dish{
+    position: relative;
+    $checkmark-width: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px lightgrey;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    overflow-x: hidden;
+
+    p{
+        padding: 3px;
+    }
+    h2{
+        padding: 3px;
+    }
+    
+    &:hover{
+        .name-and-description{
+            max-width: calc(100% - 117px);
+        }
+        .price-and-checkmark{
+            transform: translateX(0);
+        }
+        .checkmark-box h4{
+            transform: rotate(0);
+        }
+    }
+}
+
+.name-and-description{
+    margin: 5px;
+    max-width: calc(100% - 22px);
+    transition: max-width 1s;
+
+    h2{
+        font-family: 'Roboto';
+        font-weight: 700;
+    }
+
+    p{
+        font-family: 'Roboto';
+        font-weight: 300;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.price-and-checkmark{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+
+    display: flex;
+    transform: translateX(100px);
+    transition-property: transform;
+    transition-duration: 1s;
+    background-color: #99E2D0;
+
+    p{
+        margin-right: 5px;
+        background-color: white;
+    }
+
+    .checkmark-box{
+        width: 100px;
+    }
+
+    h4{
+        text-align: center;
+        transform: rotate(180deg);
+        transition-property: transform;
+        transition-duration: 1s;
+    }
+}
+

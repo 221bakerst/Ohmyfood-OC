@@ -11,7 +11,7 @@
     border-radius: 15px;
     /* border: 4px solid red; */
     height: 250px;
-    box-shadow: 5px 5px 5px lightgrey;
+    box-shadow: 5px 5px 5px 5px lightgrey;
 }
 .card-details{
     object-fit: cover;
@@ -25,6 +25,11 @@
 }
 .restaurant-details{
     margin-left: 10px;
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
 }
 .rest-details-flex{
     display: flex;
@@ -35,12 +40,18 @@
 .heart{
     font-size: 20px;
     padding: 10px;
-    color: linear-gradient(#FF79DA,#9356DC);
+    // border: 5px solid pink;
 }
-.restaurant-details h5{
-    font-weight: 900;
-}
-// .restaurants-details a{
-//     border: solid 5px red;
-//     text-decoration: none;
+// .heart i::before{
+//     content: attr(data-text); 
+//     position: absolute; 
+//     // top: 0; 
+//     // left: 0; 
+//     color: linear-gradient(#FF79DA,#9356DC);
+//     overflow: hidden;
+//     width: 0%; 
+//     transition: 1s;  
+// }
+// .heart i:hover::before{
+//     width: 100%;
 // }

@@ -1,58 +1,87 @@
-*{
+  /* @font-face {
+    font-display: swap;
+    font-family: 'Shrikhand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/shrikhand-v15-latin-regular.woff2') format('woff2');
+   } */
+  @font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v30-latin-300.woff2') format('woff2');
+   }
+  @font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+   }
+
+
+/* *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
+} */
 
 
 
 
-.header{
+/* .header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 .header img{
     width: 200px;
-}
-.rest-image img{
+} */
+/* .rest-image img{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     width: 100%;
     height: 550px;
-}
+} */
 
 
 
-.menu-items{
+/* .menu-items{
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     background-color: whitesmoke;
-    /* border: 8px solid red; */
+    border: 8px solid red;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
     
-}
-.rest-name{
+} */
+/* .rest-name{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* border: 5px solid blue; */
-}
-.entrees{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Shrikhand';
+    font-size: 27px;
+} */
+/* .rest-name i{
+    font-size: 30px;
+    padding: 8px;
+} */
+/* .entrees{
     display: flex;
     flex-direction: column;
     gap: 20px;
     animation-name: entree;
     animation-duration: 2s;
-    /* animation-fill-mode: backwards; */
     position: relative;
-    /* border: 5px solid purple; */
 }
 @keyframes entree{
     from{bottom: -250px;}
@@ -68,34 +97,32 @@
     margin-top: 10px;
     margin-bottom: 15px;
     border-bottom: 4px solid #99E2D0;
-}
-
-.description{
-    font-weight: lighter;
+} */
+/* .dish-name h2{
+    font-family: 'Roboto';
+} */
+/* .description{
     width: auto;
-    /* display: inline-block; */
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-}
-.description:hover{
+} */
+/* .description:hover{
     display: inline-block;
     width: 300px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 
-}
-.description h3{
+} */
+/* .description h3{
     display: inline-block;
-    color: grey;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-}
-.dishes{
+    font-family: 'Roboto';
+} */
+/* .dishes{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -103,16 +130,16 @@
     background-color: white;
     border-radius: 15px;
     box-shadow: 5px 5px 5px lightgrey;
-}
-.dish-description{
+} */
+/* .dish-description{
     display: flex;
     flex-direction: column;
     padding: 10px;
     margin: 10px;
     gap: 10px;
-}
+} */
 
-.button{
+/* .button{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -121,25 +148,25 @@
     flex-direction: row;
     justify-content: space-between;
     overflow-x: hidden;
-}
-.price-and-checkmark{
+} */
+/* .price-and-checkmark{
     display: flex;
     align-items: end;
     transform: translateX(50px);
     transition-property: transform;
     transition-duration: 1s;
-}
-.price{
+} */
+/* .price{
     margin: 20px;
-}
-.checkmark{
+} */
+/* .checkmark{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #99E2D0;
     width: 100px;
     height: 100%;
-}
-.checkmark i{
+} */
+/* .checkmark i{
     display: block;
     font-size: 30px;
     justify-content: center;
@@ -148,20 +175,20 @@
     transform: rotate(360deg);
     transition-property: transform;
     transition-duration: 1s;
-}
-.dishes:hover .price-and-checkmark{
+} */
+/* .dishes:hover .price-and-checkmark{
     transform: translateX(0);
 }
 .checkmark i:hover{
     transform: rotate(0);
-}
+} */
 
-.order-button{
+/* .order-button{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.order-button p{
+} */
+/* .order-button p{
     color: white;
     background-image: linear-gradient(#FF79DA, #9356DC);
     border-radius: 50px;
@@ -169,11 +196,11 @@
     padding-left: 50px;
     padding-right: 50px;
     box-shadow: 5px 5px 5px lightgrey;
-}
+} */
 
 
 
-.footer{
+/* .footer{
     display: flex;
     flex-direction: column;
     background-color: #3f3f46;
@@ -197,6 +224,6 @@
     flex-direction: row-reverse;
     justify-content: left;
     gap: 5px;
-}
+} */
 
 
