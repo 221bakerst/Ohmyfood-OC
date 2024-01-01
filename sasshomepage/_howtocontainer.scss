@@ -22,12 +22,21 @@
 }
 
 .how-to-child i{
-    color: grey;
+    color: #9356DC;
 }
-.how-to-child number{
-    width: 8px;
-    height: 8px;
-    border: 3px solid black;
-    border-radius: 100%;
-    padding: 3px;
+.how-to-child {
+    // position: relative;
+
+    number{
+        position: absolute;
+        text-align: center;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #9356DC;
+        background-color: #9356DC;
+        color: white;
+        border-radius: 100%;
+        // padding: 4px;
+        margin-left: -35px;;
+    }
 }

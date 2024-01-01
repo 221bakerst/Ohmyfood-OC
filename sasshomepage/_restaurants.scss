@@ -2,11 +2,17 @@
     padding: 30px;
     gap: 15px;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     background-color: whitesmoke;
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
 .restaurant-card{
     display: flex;
+    flex-wrap: wrap;
+    width: 348px;
     flex-direction: column;
     border-radius: 15px;
     /* border: 4px solid red; */
@@ -25,11 +31,7 @@
 }
 .restaurant-details{
     margin-left: 10px;
-    a{
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-    }
+
 }
 .rest-details-flex{
     display: flex;
@@ -37,21 +39,22 @@
     justify-content: space-between;
     align-items: center;
 }
-.heart{
-    font-size: 20px;
-    padding: 10px;
-    // border: 5px solid pink;
+
+
+.heart-container{
+    font-size: 30px;
+    padding: 5px;
+    color: white;
+    text-shadow: 0  0 3px black;
+    cursor: pointer;
+
+
+    &:hover{
+        text-shadow: none;
+        color: #FF79DA;
+        background-image: linear-gradient(#FF79DA,#9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 1s ease-in-out;
+    }
 }
-// .heart i::before{
-//     content: attr(data-text); 
-//     position: absolute; 
-//     // top: 0; 
-//     // left: 0; 
-//     color: linear-gradient(#FF79DA,#9356DC);
-//     overflow: hidden;
-//     width: 0%; 
-//     transition: 1s;  
-// }
-// .heart i:hover::before{
-//     width: 100%;
-// }

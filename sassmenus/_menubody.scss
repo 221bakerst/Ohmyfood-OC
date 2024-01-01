@@ -37,6 +37,9 @@
     margin-left: 20px;
     font-family: 'Shrikhand';
     font-size: 27px;
+    h1{
+        font-size: 40px;
+    }
 }
 .rest-name i{
     font-size: 30px;
@@ -67,6 +70,22 @@
     margin-bottom: 15px;
     border-bottom: 4px solid #99E2D0;
     /* font-family: 'Roboto 300'; */
+}
+.order-button{
+    display: flex;
+    justify-content: center;
+    p{
+        color: white;
+        background-image: linear-gradient(#FF79DA,#9356DC);
+        border-radius: 15px;
+        padding: 10px;
+        box-shadow: 5px 5px 5px lightgrey;
+        width: 50px;
+
+        &:hover{
+            box-shadow: 0 0 10px black;
+        }
+    }
 }
 
 

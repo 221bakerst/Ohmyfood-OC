@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-around;
     background-color: whitesmoke;
+
     h1{
         font-size: 26px;
         padding-top: 25px;
@@ -17,11 +18,18 @@
         color: grey;
         margin: 30px;
     }
+    a{
+        text-decoration: none;
+    }
     p{
         color: white;
         background-image: linear-gradient(#FF79DA,#9356DC);
         border-radius: 15px;
         padding: 10px;
         box-shadow: 5px 5px 5px lightgrey;
+
+        &:hover{
+            box-shadow: 0 0 10px black;
+        }
     }
 }
