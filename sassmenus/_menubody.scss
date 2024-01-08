@@ -74,13 +74,18 @@
 .order-button{
     display: flex;
     justify-content: center;
+    height: 40px;
     p{
+        align-items: center;
+        display: flex;
         color: white;
         background-image: linear-gradient(#FF79DA,#9356DC);
         border-radius: 15px;
-        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
         box-shadow: 5px 5px 5px lightgrey;
-        width: 50px;
+        width: auto;
+
 
         &:hover{
             box-shadow: 0 0 10px black;

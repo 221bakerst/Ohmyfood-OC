@@ -1,21 +1,29 @@
 .restaurants-flex-container{
-    padding: 30px;
+    padding: 60px;
     gap: 15px;
     display: flex;
-    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: whitesmoke;
     a{
         text-decoration: none;
         color: black;
     }
 }
+.title{
+    position: absolute;
+    h4{
+        font-size: 30px;
+        position: relative;
+        margin-top: -50px;
+    }
+}
 .restaurant-card{
     display: flex;
     flex-wrap: wrap;
-    width: 348px;
+    width: 400px;
     flex-direction: column;
     border-radius: 15px;
-    /* border: 4px solid red; */
     height: 250px;
     box-shadow: 5px 5px 5px 5px lightgrey;
 }

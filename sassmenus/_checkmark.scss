@@ -15,7 +15,7 @@
 
 .dish{
     position: relative;
-    $checkmark-width: 100px;
+    $checkmark-width: 120px;
 
     display: flex;
     justify-content: space-between;
@@ -68,7 +68,7 @@
 }
 
 .price-and-checkmark{
-    $checkmark-width: 100px;
+    width: 120px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -80,19 +80,20 @@
     transition-property: transform;
     transition-duration: 1s;
     background-color: #99E2D0;
-    width: 100px;
 
 
     p{
+        position: relative;
         display: flex;
         align-items: end;
         background-color: white;
+        width: 50px;
     }
 
     .checkmark-box{
         display: flex;
         justify-content: center;
-        width: $checkmark-width;
+        width: 100px;
         i{
             font-size: 30px;
             align-self: center;

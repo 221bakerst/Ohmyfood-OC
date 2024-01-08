@@ -5,11 +5,11 @@
     background-color: #3f3f46;
     padding: 15px;
     color: white;
-    img{
-        color: white;
-        width: 100px;
-        padding: 5px;
-    }
+    // img{
+    //     color: white;
+    //     width: 100px;
+    //     padding: 5px;
+    // }
     ul{
         color: white;
     }
@@ -31,4 +31,10 @@
 }
 .icon-footers ul{
     padding: 0;
+}
+.footer-image{
+    img{
+        width: 150px;
+        fill: white;
+    }
 }
