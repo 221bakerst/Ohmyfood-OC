@@ -1,10 +1,3 @@
-@font-face {
-    font-display: swap;
-    font-family: 'Shrikhand';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/shrikhand-v15-latin-regular.woff2') format('woff2');
-   }
 .rest-image img{
     display: flex;
     align-items: center;
@@ -61,15 +54,18 @@
     from{opacity: 0;}
     to{opacity: 1;}
 }
-.entrees h3{
-    width: fit-content;
-    padding: 5px;
-    color: gray;
-    font-size: 17px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-bottom: 4px solid #99E2D0;
-    /* font-family: 'Roboto 300'; */
+.entrees{
+
+    h3{
+        width: fit-content;
+        padding: 5px;
+        color: gray;
+        font-size: 17px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-bottom: 4px solid #99E2D0;
+    }
+
 }
 .order-button{
     display: flex;

@@ -1,5 +1,5 @@
 .how-to-container{
-    height: 300px;
+    height: 350px;
     gap: 30px;
     display: flex;
     flex-direction: column;
@@ -11,6 +11,10 @@
         margin-bottom: 10px;
         background: none;
         box-shadow: none;
+
+        &:hover{
+            background: none;
+        }
     }
     li{
         border-radius: 15px;
@@ -20,6 +24,10 @@
         gap: 20px;
         list-style: none;
         display: flex;
+
+        &:hover{
+            background: #E9D3FF;
+        }
     }
 }
 

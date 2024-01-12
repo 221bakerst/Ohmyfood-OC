@@ -1,49 +1,86 @@
-.header {
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+@font-face {
+  font-family: "robotobold";
+  src: url("./assets/fonts/roboto-bold-webfont.woff2") format("woff2"), url("./assets/fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.dish {
   position: relative;
   display: flex;
-  height: auto;
+  justify-content: space-between;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px lightgrey;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  overflow-x: hidden;
 }
-.header img {
-  padding: 15px;
-  width: 200px;
-  height: 30px;
-  margin-right: auto;
-  margin-left: auto;
+.dish p {
+  padding: 3px;
+}
+.dish h2 {
+  padding: 3px;
+}
+.dish:hover .name-and-description {
+  max-width: calc(100% - 117px);
+}
+.dish:hover .price-and-checkmark {
+  transform: translateX(0);
+}
+.dish:hover .checkmark-box i {
+  transform: rotate(0);
 }
 
-.info-box {
-  height: 250px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: whitesmoke;
+.name-and-description {
+  margin: 5px;
+  max-width: calc(100% - 22px);
+  transition: max-width 1s;
 }
-.info-box h1 {
-  font-size: 26px;
-  padding-top: 25px;
-}
-.info-box h2 {
+.name-and-description h2 {
+  font-family: "robotobold";
+  font-weight: 500;
   font-size: 20px;
-  text-align: center;
-  font-weight: 25;
+}
+.name-and-description p {
+  font-family: "robotobold";
   color: grey;
-  margin: 30px;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.info-box a {
-  text-decoration: none;
+
+.price-and-checkmark {
+  width: 120px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  transform: translateX(80px);
+  transition-property: transform;
+  transition-duration: 1s;
+  background-color: #99E2D0;
 }
-.info-box p {
-  color: white;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 15px;
-  padding: 10px;
-  box-shadow: 5px 5px 5px lightgrey;
+.price-and-checkmark .price {
+  position: relative;
+  display: flex;
+  align-items: end;
+  background-color: white;
+  width: 50px;
 }
-.info-box p:hover {
-  box-shadow: 0 0 10px black;
+.price-and-checkmark .checkmark-box {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+.price-and-checkmark .checkmark-box i {
+  font-size: 30px;
+  align-self: center;
+  transform: rotate(180deg);
+  transition-property: transform;
+  transition-duration: 1s;
 }
 
 .footer {
@@ -53,6 +90,14 @@
   background-color: #3f3f46;
   padding: 15px;
   color: white;
+}
+.footer img.footer-logo {
+  align-items: left;
+  color: white;
+  width: 100px;
+  height: 50px;
+  margin-right: 0;
+  margin-left: 0;
 }
 .footer ul {
   color: white;
@@ -76,185 +121,123 @@
   padding: 0;
 }
 
-.footer-image img {
-  width: 150px;
-  fill: white;
-}
-
-.how-to-container {
-  height: 300px;
-  gap: 30px;
+.rest-image img {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 40px;
-  padding: 0;
-}
-.how-to-container .h3 {
-  font-size: 26px;
-  margin-bottom: 10px;
-  background: none;
-  box-shadow: none;
-}
-.how-to-container li {
-  border-radius: 15px;
-  background: whitesmoke;
-  box-shadow: 5px 5px 5px lightgrey;
-  padding: 25px;
-  gap: 20px;
-  list-style: none;
-  display: flex;
-}
-
-.how-to-child i {
-  color: #9356DC;
-}
-
-.how-to-child .number {
-  position: absolute;
-  text-align: center;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #9356DC;
-  background-color: #9356DC;
-  color: white;
-  border-radius: 100%;
-  margin-left: -35px;
-}
-
-.location {
-  gap: 10px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 17px;
-  background-color: gainsboro;
-}
-
-.restaurants-flex-container {
-  padding: 60px;
-  gap: 15px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 550px;
+}
+
+.menu-items {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   background-color: whitesmoke;
-}
-.restaurants-flex-container a {
-  text-decoration: none;
-  color: black;
-}
-
-.title {
-  position: absolute;
-}
-.title h4 {
-  font-size: 30px;
+  /* border: 8px solid red; */
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  margin-top: -100px;
   position: relative;
-  margin-top: -50px;
+  z-index: 2;
 }
 
-.restaurant-card {
-  display: flex;
-  flex-wrap: wrap;
-  width: 400px;
-  flex-direction: column;
-  border-radius: 15px;
-  height: 250px;
-  box-shadow: 5px 5px 5px 5px lightgrey;
-}
-
-.card-details {
-  object-fit: cover;
-  display: flex;
-  flex-direction: column;
-}
-
-.restaurant-image {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  height: 75%;
-}
-
-.restaurant-details {
-  margin-left: 10px;
-}
-
-.rest-details-flex {
+.rest-name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-family: "Shrikhand";
+  font-size: 27px;
+}
+.rest-name h1 {
+  font-size: 40px;
 }
 
-.heart-container {
+.rest-name i {
   font-size: 30px;
-  padding: 5px;
-  color: white;
-  text-shadow: 0 0 3px black;
-  cursor: pointer;
+  padding: 8px;
 }
-.heart-container:hover {
-  text-shadow: none;
-  color: #FF79DA;
+
+.entrees {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation-name: entree;
+  animation-duration: 2s;
+  /* animation-fill-mode: backwards; */
+  position: relative;
+  /* border: 5px solid purple; */
+}
+
+@keyframes entree {
+  from {
+    bottom: -250px;
+  }
+  to {
+    bottom: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.entrees h3 {
+  width: fit-content;
+  padding: 5px;
+  color: gray;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-bottom: 4px solid #99E2D0;
+}
+
+.order-button {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+.order-button p {
+  align-items: center;
+  display: flex;
+  color: white;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 1s ease-in-out;
+  border-radius: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 5px 5px 5px lightgrey;
+  width: auto;
+}
+.order-button p:hover {
+  box-shadow: 0 0 10px black;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.header img {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header i {
+  font-size: 20px;
+  justify-content: left;
+  padding: 10px;
+  color: black;
 }
 
 * {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.loading-container {
-  animation: backdrop 4s 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: -5;
-  opacity: 0;
-}
-
-.circle {
   padding: 0;
-  margin: 0;
-  display: flex;
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  border: 15px solid #FF79DA;
-  border-radius: 50%;
-  border-left: none;
-  border-right: none;
-  animation: spin 3s linear;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
-}
-@keyframes backdrop {
-  0% {
-    z-index: 10;
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
