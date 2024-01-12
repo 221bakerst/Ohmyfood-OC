@@ -1,17 +1,4 @@
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/roboto-v30-latin-300.woff2") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
-}
+
 .dish {
   position: relative;
   display: flex;
@@ -45,13 +32,13 @@
   transition: max-width 1s;
 }
 .name-and-description h2 {
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
   font-weight: 700;
   font-size: 20px;
 }
 .name-and-description p {
   color: grey;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
   font-weight: 300;
   overflow: hidden;
   white-space: nowrap;
@@ -129,13 +116,13 @@
   padding: 0;
 }
 
-@font-face {
+/* @font-face {
   font-display: swap;
   font-family: "Shrikhand";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/shrikhand-v15-latin-regular.woff2") format("woff2");
-}
+} */
 .rest-image img {
   display: flex;
   align-items: center;
@@ -255,26 +242,6 @@
   margin: 0;
   padding: 0;
 }
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/roboto-v30-latin-300.woff2") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Shrikhand";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/shrikhand-v15-latin-regular.woff2") format("woff2");
-}
+
 
 /*# sourceMappingURL=indexmenu.css.map */
